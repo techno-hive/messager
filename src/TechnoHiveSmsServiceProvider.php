@@ -8,6 +8,9 @@
             $this->loadRoutesFrom(__DIR__.'/routes/web.php');
             $this->loadViewsFrom(__DIR__.'/resources/views', 'Sms');
             $this->loadMigrationsFrom(__DIR__.'/Database/migrations');
+            $this->publishes([
+                __DIR__.'/config/hivesms.php' => config_path('hivesms.php'),
+            ]);
         }
         public function register()
         {
