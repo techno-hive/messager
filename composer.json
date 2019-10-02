@@ -1,5 +1,5 @@
 {
-    "name": "TechnoHive/LaravelBulkSms",
+    "name": "technohive/laravel-bulk-sms",
     "description": "TechnoHive Bulsms package",
     "license": "MIT",
     "authors": [
@@ -12,7 +12,14 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "TechnoHive\\sms\\": "src/"
+            "TechnoHive\\Sms\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TechnoHive\\Sms\\TechnoHiveSmsServiceProvider"
+            ]
         }
     }
 }
